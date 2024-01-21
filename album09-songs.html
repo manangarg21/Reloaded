@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        nav {
+            background-color: black;
+            color: whitesmoke;
+            position: fixed;
+            z-index: 69;
+            top: 0;
+            left: 0;
+            height: 80px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: whitesmoke;
+            text-align: center;
+            padding: 15px 18px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        nav ul.menu li {
+            float: left;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        nav ul.menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 22px 19px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        nav ul.menu li a.active {
+            background-color: darkgray;
+        }
+
+        nav img {
+            width: 160px;
+            height: 80px;
+            position: absolute;
+            top: 0px;
+            left: 5px;
+        }
+
+        body {
+            background-image: url(album09-songs.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        table,
+        tr,
+        td,
+        th {
+            border: none;
+            text-align: center;
+            padding: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(119, 31, 187);
+            font-size: 20px;
+            font-weight: 900;
+            line-height: 2;
+        }
+
+        .Heading {
+            text-align: center;
+            display: flexbox;
+            font-size: 90px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgba(245, 61, 61, 0.924);
+            margin-top: 50px;
+            line-height: 80%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .Sub_Heading {
+            text-align: center;
+            display: flexbox;
+            font-size: 30px;
+            color: rgba(245, 61, 61, 0.924);
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .song {
+            cursor: pointer;
+        }
+
+/* 
+        .button1 {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            background-color: rgba(27, 149, 0, 0.85);
+            border: black solid 2px;
+            color: black;
+            font-weight: bolder;
+            transition: transform 0.2s ease-in-out;
+            margin-left: 20px;
+            cursor: pointer;
+            float: right;
+
+        }
+
+        .button2 {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            background-color: rgba(68, 77, 158, 0.85);
+            border: black solid 2px;
+            color: black;
+            font-weight: bolder;
+            margin-left: 20px;
+            cursor: pointer;
+            float: right;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .button3 {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            background-color: rgba(255, 0, 93, 0.85);
+            border: black solid 2px;
+            color: black;
+            font-weight: bolder;
+            margin-left: 20px;
+            cursor: pointer;
+            float: right;
+            transition: transform 0.2s ease-in-out;
+
+        } */
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        /* .buttons {
+            margin-top: 150px;
+            margin-right: 120px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        } */
+
+        table {
+            width: 100%;
+            margin-top: 90px;
+        }
+
+        tr:hover td {
+            background-color: #ccc;
+            color: rgb(0, 0, 0);
+        }
+
+        .Description {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        .Description span {
+            text-align: left;
+        }
+
+        .Desc_Txt {
+            margin-top: 100px;
+            margin-left: 90px;
+            font-weight: bold;
+            font-size: 23px;
+            color: rgb(28, 167, 23);
+        }
+
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding-bottom: 60px;
+        }
+
+        footer {
+            background-color: lightgrey;
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #000;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition: all 0.2s ease-out;
+        }
+
+        a {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+
+
+    <title>
+        Arctic Monkeys
+    </title>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li> <img src="reload.png"></li>
+          <li><a href="index.html" class="link">Home</a></li>
+          <li><a href="artists.html" class="link">Artists</a></li>
+          <li><a href="about.html" class="link">About</a></li>
+          <li><a href="spotlight.html" class="link">Artist Spotlight</a></li>
+          <li><a href="search.html" class="link">Search</a></li>
+          <li><a href="playlist.html" class="link">My Playlist</a></li>
+        </ul>
+    </nav>
+
+    <div class="Description">
+        <span class="Desc_Txt">
+            <p>Number of songs: 7 <br></p>
+            <p>Year of release: June 2011<br></p>
+            <p>Genre: Alternative/Indie <br></p>
+        </span>
+        <!-- <div class="buttons">
+            <button class="button1"> Play </button>
+            <button class="button2">Download</button>
+            <button class="button3">Like</button>
+        </div> -->
+    </div>
+
+    <div class="Heading">
+        <p>Suck It and See</p>
+    </div>
+    <div class="Sub_Heading">
+        <p>by Arctic Monkeys</p>
+    </div>
+
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Duration</th>
+            <th>Plays</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td class="song"><u>She's Thunderstorms</u></td>
+            <td>3:54</td>
+            <td>60,607,209</td>
+            <td><button class="save-button" data-id="1">Add to Playlist</button></td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td class="song"><u>Black Treacle</u></td>
+            <td>3:57</td>
+            <td>60,016,708</td>
+            <td><button class="save-button" data-id="2">Add to Playlist</button></td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td class="song"><u>Don't Sit Down 'Cause<br> I've Moved Your Chair</u></td>
+            <td>3:03</td>
+            <td>72,301,517</td>
+            <td><button class="save-button" data-id="3">Add to Playlist</button></td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td class="song"><u>Suck It And See</u></td>
+            <td>3:45</td>
+            <td>83,433,700</td>
+            <td><button class="save-button" data-id="4">Add to Playlist</button></td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td class="song"><u>Love is a Laserquest</u></td>
+            <td>3:11</td>
+            <td>75,380,375</td>
+            <td><button class="save-button" data-id="5">Add to Playlist</button></td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td class="song"><u>Piledriver Waltz</u></td>
+            <td>3:23</td>
+            <td>66,084,836</td>
+            <td><button class="save-button" data-id="6">Add to Playlist</button></td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td class="song"><u>Reckless Serenade</u></td>
+            <td>2:42</td>
+            <td>37,309,087</td>
+            <td><button class="save-button" data-id="7">Add to Playlist</button></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <p>RELOADED BY TEAM BLACK-OPS</p>
+        <p
+            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            We created this website to put the best music of the best artists in one place for your convenience</p>
+        <p
+            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            So groove to the tunes and have fun!</p>
+        <a style="font-size:15px ;" href="about.html">About Us</a>
+    </footer>
+    <script src="random2.js"></script>
+    
+</body>
+
+</html>

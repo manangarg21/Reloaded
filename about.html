@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<head>
+    <title>About Page</title>
+    <style>
+        nav {
+            background-color: black;
+            color: whitesmoke;
+            position: fixed;
+            z-index: 69;
+            top: 0;
+            left: 0;
+            height: 80px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        a {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: whitesmoke;
+            text-align: center;
+            padding: 15px 18px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        nav ul.menu li {
+            float: left;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        nav ul.menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 22px 19px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        nav ul.menu li a.active {
+            background-color: darkgray;
+        }
+
+        nav img {
+            width: 160px;
+            height: 80px;
+            position: absolute;
+            top: 0px;
+            left: 5px;
+        }
+
+
+        body {
+            background-image: url(about.jpg);
+            background-size: contain;
+            background-repeat: repeat;
+        }
+
+        .Para_Headings {
+            font-weight: bold;
+            line-height: 45px;
+            font-size: 30px;
+            margin-left: 100px;
+            margin-right: 100px;
+            color: rgb(229, 45, 20);
+            margin-top: 50px;
+            font-size: 40px;
+            display: flex;
+        }
+
+        .Text_cells {
+            display: flex;
+            flex-direction: row;
+            margin-left: 100px;
+            margin-right: 100px;
+            height: auto;
+            /* set the height to auto */
+            margin-top: 50px;
+            overflow: auto;
+        }
+
+        .Para_Image {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .Para_Image {
+            width: 60%;
+            height: 60%;
+            overflow: hidden;
+            margin-left: 60px;
+            margin-right: 100px;
+            margin-top: 50px;
+        }
+
+        .Para_Image img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            display: flex;
+            margin: auto;
+        }
+
+        .Para_Text {
+            width: 80ch;
+            height: 80ch;
+            padding: 10px;
+            font-size: 30px;
+            color: rgb(252, 252, 252);
+            margin-top: 50px;
+        }
+
+        .About_Headings {
+            font-size: 60px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: rgb(221, 15, 203);
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: lightgrey;
+            padding: 20px;
+        }
+
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding-bottom: 60px;
+        }
+
+        footer {
+            background-color: lightgrey;
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #000;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li> <img src="ReLOADED.png"></li>
+            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="artists.html" class="link">Artists</a></li>
+            <li><a href="about.html" class="active" class="link">About</a></li>
+            <li><a href="spotlight.html" class="link">Artist Spotlight</a></li>
+            <li><a href="search.html" class="link">Search</a></li>
+            <li><a href="playlist.html" class="link">My Playlist</a></li>
+        </ul>
+    </nav>
+
+    <p
+        style="font-size: 100px; text-align:center; color:rgba(221, 11, 11, 0.99); margin: left 100px; margin: right 100px;">
+        <strong>&#8619 Welcome to Reloaded &#8619</strong>
+    </p>
+    <p style="text-align:center; font-size:40px; color:rgb(249, 73, 73); margin: right 100px;  margin: left 100px;">
+        <strong>No more reloading in your life</strong>
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="About_Headings">
+        <p>
+            Want to know about our site?
+        </p>
+    </div>
+
+    <div class="Text_cells">
+        <div class="Para_Headings">
+            <p>
+                Why did we create this site?
+            </p>
+        </div>
+        <div class="Para_Text">
+            <p>
+                This site was created by the sole purpose of providing
+                an online platform for rating songs by the general public.
+                We all have seen a movies imDb platform which is considered
+                to be a significant criteria when it comes to judging a movie.
+                Well, we thought why don't we create a similar portal for songs...<br>
+                Imagine you could have a site, where you can rate the songs based on your
+                likings, give critiques about the artists, their albums and rank them
+                based on their popularity in the recent days. It would be such a havoc to
+                create a separate site for this purpose and simultaneously listening to
+                the songs. So we present to you: <strong>ReLOADED</strong><br>
+                Also on a totally unrelated note, we had to finish our phases of ISS project.
+            </p>
+        </div>
+        <div class="Para_Image">
+            <img src="MemeAboutPage.jpeg">
+        </div>
+    </div>
+    <div class="Text_cells">
+        <div class="Para_Headings">
+            <p>
+                What is this site? What are it's features?
+            </p>
+        </div>
+        <div class="Para_Text">
+            <p>
+                On this site, you can rate the artists based on their albums, individual
+                songs, and vibing to these songs with your friends at the same time.
+                There is an "Artists Page" where you can see which music diva is in the
+                hits currently and all of their albums compiled at a place. By clicking on
+                these artists, you'll be redirected to their personalized page, where you can view
+                all of their albums and get all sort of details about the same.
+                <br>
+                On our "Home Page" you can find the top ranking albums, songs and artists
+                this month. There is a "nav bar" with which you can visit any part of
+                our website. You can also find a redirecting footer to this page when you're on
+                other sites.<br>
+                We have recently added a "Search Page" where you can search for your favourite albums,
+                songs, and artists, and can hear a preview of the search results. You can also filter out
+                the duration of the songs and listen to explicit songs too ._.
+            </p>
+        </div>
+        <div class="Para_Image">
+            <img src="about4.jpg">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="About_Headings">
+        <p>
+            Want to know our team?
+        </p>
+    </div>
+
+    <div class="Text_cells">
+        <div class="Para_Headings">
+            <p>
+                Manan Garg
+            </p>
+        </div>
+        <div class="Para_Text">
+            <p>
+            <ul>
+                <li>Gender: Male</li>
+                <li>Age: 18</li>
+                <li>Occupation: Currently doing BTech in Computer Science and Engineering</li>
+                <li>University Name: IIIT Hyderabad</li>
+                <li>E-mail ID: manan.garg@students.iiit.ac.in</li>
+                <li>Instagram: manan____21 </li>
+                <li>Any other contact sources:
+                    <ul>
+                        <li>LinkedIn: Manan-Garg-904794253 </li>
+                        <li> Spotify: Manan21 (5 Playlists)</li>
+                        <li>Discord: Manan_Garg#0915</li>
+                    </ul>
+                </li>
+            </ul>
+            Personal Comments: It was a long and tiring task but had a lot of fun making it.
+            As a music enjoyer it was a fun task and enjoyed designing it with my teammate.
+            Hope you like the site.
+            </p>
+        </div>
+
+        <div class="Para_Image">
+            <img src="Manan.jpeg">
+        </div>
+    </div>
+
+    <div class="Text_cells">
+        <div class="Para_Headings">
+            <p>
+                Aanvik Bhatnagar
+            </p>
+        </div>
+        <div class="Para_Text">
+            <p>
+            <ul>
+                <li>Gender: Male</li>
+                <li>Age: 18</li>
+                <li>Occupation: Currently doing BTech in Computer Science and Engineering</li>
+                <li>University Name: IIIT Hyderabad</li>
+                <li>E-mail ID: aanvik.bhatnagar@students.iiit.ac.in</li>
+                <li>Instagram: aanvik_26 </li>
+                <li>Any other contact sources:
+                    <ul>
+                        <li> Spotify: Aanvik Bhatnagar (3 Playlists)</li>
+                        <li>Discord: piKaBo_O#8302</li>
+                    </ul>
+                </li>
+            </ul>
+            Personal Comments: Well this was a really tough and tiring task for me.
+            I am a fortunate guy who had such a great teammate who was able to help me
+            do so much of work. But as an enjoyer of music, that too Weeknd, this was
+            worth it. Hope that you like this site and give me full marks :p
+            </p>
+        </div>
+        <div class="Para_Image">
+            <img src="Aanvik.jpeg">
+        </div>
+    </div>
+    <div class="Text_cells">
+        <div class="Para_Headings">
+            <p>
+                And we present to you...
+                BLACK OPS &#169;
+            </p>
+        </div>
+        <div class="Para_Text">
+            <p>
+                One may ask why did we name our team Black Ops hmmm. Even
+                we didn't have that much clue when we named our team, other than
+                the fact that we both love COD XD<br>
+                As far as the site name is to be concerned with, we both went on
+                a buffering mode while we were making this site. From an external
+                perspective, it looked like we were reloading non-stop.
+            </p>
+        </div>
+        <div class="Para_Image">
+            <img src="Combined.jpeg">
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <p>RELOADED BY TEAM BLACK-OPS </p>
+        <p
+            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            We created this website to put the best music of the best artists in one place for your convenience</p>
+        <p
+            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            So groove to the tunes and have fun!</p>
+        <a style="font-size:15px ;" href="about.html">About Us</a>
+    </footer>
+
+    <script>
+        const links = document.querySelectorAll('.link');
+        links.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.backgroundColor = 'white';
+                link.style.color = 'black';
+            });
+            link.addEventListener('mouseout', () => {
+                link.style.backgroundColor = '';
+                link.style.color = '';
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>RELOADED:HOME</title>
+
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li> <img src="reload.png"></li>
+            <li><a href="index.html" class="active" class="link">Home</a></li>
+            <li><a href="artists.html" class="link">Artists</a></li>
+            <li><a href="about.html" class="link">About</a></li>
+            <li><a href="spotlight.html" class="link">Artist Spotlight</a></li>
+            <li><a href="search.html" class="link">Search</a></li>
+            <li><a href="playlist.html" class="link">My Playlist</a></li>
+        </ul>
+    </nav>
+
+    <h1>MAIN MENU</h1>
+
+    <h2>TOP ARTISTS</h2>
+    <div class="container">
+
+        <div class="image-container">
+            <a href="ArcticMonkeys.html">
+                <img class="item" src="https://i.pinimg.com/564x/f1/40/9e/f1409ea017ed4c93da12f847e7d433b1.jpg">
+                <div class="album-description">
+                    <p>ARCTIC MONKEYS</p>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="image-container">
+        <a href="ImagineDragons.html">
+            <img class="item" src="https://i.pinimg.com/736x/4e/bc/ee/4ebcee51bceb000b75d1b2c64e3e0079.jpg">
+            <div class="album-description">
+                <p>IMAGINE DRAGONS</p>
+        </a>
+    </div>
+    </div>
+
+    <div class="image-container">
+        <a href="TheWeeknd.html">
+            <img class="item" src="https://i.pinimg.com/564x/2a/90/86/2a9086b3eabd4cc6bbae6f216dbd4a25.jpg">
+            <div class="album-description">
+                <p>THE WEEKND</p>
+        </a>
+    </div>
+    </div>
+    </div>
+
+    <h2>TOP ALBUMS</h2>
+    <div class="container">
+
+        <div class="image-container">
+            <a href="album03-songs.html">
+                <img class="item" src="https://i.pinimg.com/564x/ee/92/af/ee92af04ab88c1a06e4e77eec0f99602.jpg">
+                <div class="album-description">
+                    <p style="color:yellow; font-family:'Times New Roman', Times, serif; font-size: 30px;">EVOLVE</p>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="image-container">
+        <a href="album08-songs.html">
+            <img class="item" src="https://i.pinimg.com/564x/7f/a3/90/7fa3902066e62bacd678c353f47b3990.jpg">
+            <div class="album-description">
+                <p style="color:yellow; font-family:'Times New Roman', Times, serif; font-size: 30px;">AM</p>
+        </a>
+    </div>
+    </div>
+
+    <div class="image-container">
+        <a href="album21-songs.html">
+            <img class="item" src="https://i.pinimg.com/564x/e4/cd/cd/e4cdcda1f2ad58c86358a58bfd674703.jpg">
+            <div class="album-description">
+                <p style="color:yellow; font-family:'Times New Roman', Times, serif; font-size: 30px;">V</p>
+        </a>
+    </div>
+    </div>
+    </div>
+
+    <h2>TOP SONGS</h2>
+    <div class="container">
+
+        <div class="image-container">
+            <img class="item" src="https://i.pinimg.com/564x/e0/e2/c8/e0e2c81a3aceceb9d5679d75e91180cb.jpg">
+            <div class="album-description">
+                <p style="color:aquamarine; font-family: 'Courier New', Courier, monospace; font-size: 30px;">BLINDING
+                    LIGHTS</p>
+            </div>
+        </div>
+
+
+
+        <div class="image-container">
+            <img class="item" src="https://i.pinimg.com/564x/34/61/a1/3461a152487157239df87a2c7109a178.jpg">
+            <div class="album-description">
+                <p style="color:aquamarine; font-family: 'Courier New', Courier, monospace; font-size: 30px;">DEMONS</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img class="item" src="https://i.pinimg.com/564x/96/34/96/963496cd42f3906cf935e14f8438bc9c.jpg">
+            <div class="album-description">
+                <p style="color:aquamarine; font-family: 'Courier New', Courier, monospace; font-size: 30px;">MEMORIES
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>RELOADED BY TEAM BLACK-OPS</p>
+        <p
+            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            We created this website to put the best music of the best artists in one place for your convenience</p>
+        <p
+            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            So groove to the tunes and have fun!</p>
+        <a href="about.html">About Us</a>
+    </footer>
+
+    <script>
+        const links = document.querySelectorAll('.link');
+        links.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.backgroundColor = 'white';
+                link.style.color = 'black';
+            });
+            link.addEventListener('mouseout', () => {
+                link.style.backgroundColor = '';
+                link.style.color = '';
+            });
+        });
+    </script>
+</body>
+
+</html>

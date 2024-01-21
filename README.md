@@ -1,2 +1,10 @@
-# Reloaded
-Music Website 
+We add a playlist page which is connected through a database and accessed through Flask and also songs page have add to playlist option which adds to database using JavaScript and Flask.
+
+Download the zip file submitted on the device where you are working, extract the contents of the zip file and open 'index.html' page to be redirected to the Home Page of the website. The user may open any .html file as per their convenience because all the websites are interlinked together, as per the requirements of our project. Before opening any website, please read 'ASSUMPTIONS.md' to understand the assumptions made during the creation of the website and what the developers expect from the user to keep in mind while visiting their sites. 
+
+We had to make the site dynamic using JavaScript, we have made an Artists Spotlight Page and a Search Page. In this phase, we have implemented a web page where we can search for anything music related like songs, albums and artists, and your search results will be displayed on the screen, where you can apply filters to update your search results. We have also implemented a page where you can rate an artist and that entry will be displayed on the site, along with a count down timer for an album release. Please refer to the updated 'ASSUMPTIONS.md' for the working of the newly added web pages.
+We have added a playlist page which is linked to a database which gets songs added to it by the add to playlist buttons in the songs pages using JavaScript and Flask. The playlist page also has a feature to remove songs from the playlist also removing it from the database through flask. Also if the song is already in the playlist it will not add it again to the database or the playlist. Also, even on refreshing the playlist still remains as long as the server is running.
+
+# Assumptions
+- The website should be opened in fullscreen mode for the best functionality. The site may need to be zoomed out on laptops with smaller screen sizes(for example: on mac 16" it works on 100% but on mac 13" you might need to zoom out to 80% for full functionality).
+- The playlist is page is displayed once the flask code is running.
